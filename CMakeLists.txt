@@ -37,7 +37,7 @@ include(ext/cmake-defaults/CMakeLists.txt)
 # ----------------------------------------------------------
 
 add_library(
-  nanothread SHARED
+  nanothread STATIC
   include/nanothread/nanothread.h
   src/queue.cpp src/queue.h
   src/nanothread.cpp

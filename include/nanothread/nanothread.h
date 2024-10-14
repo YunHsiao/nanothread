@@ -19,9 +19,9 @@
 
 #if defined(_MSC_VER)
 #  if defined(NANOTHREAD_BUILD)
-#    define NANOTHREAD_EXPORT    __declspec(dllexport)
+#    define NANOTHREAD_EXPORT
 #  else
-#    define NANOTHREAD_EXPORT    __declspec(dllimport)
+#    define NANOTHREAD_EXPORT
 #  endif
 #else
 #  define NANOTHREAD_EXPORT      __attribute__ ((visibility("default")))
